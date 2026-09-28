@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yomi no Tsugai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Yomi no Tsugai</h1>
+        </header>
+
+        <main>
+            <section class="gallery">
+                <figure class="gallery-item item-1">
+                    <img src="img/asa_fake.webp" alt="Asa Fake">
+                    <figcaption>Asa falsa</figcaption>
+                </figure>
+                <!-- antes tava dando "Mime type,...." em qualquer video, so que provavelmente era so o navegador ou o tipo mesmo que tava eerrado -->
+                 <!-- https://www.w3schools.com/Html/html5_video.asp -->
+                <!-- video/mp4 é o tipo MIME (Multipurpose Internet Mail Extensions) padrão usado para identificar arquivos de vídeo no formato MP4 na internet e em códigos HTML.  -->
+                <figure class="gallery-item item-2">
+                    <div class="media-container">
+                        <video controls>
+                            <source src="videos/yomi-no-tsugai-op.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <figcaption>Primeiro encerramento</figcaption>
+                </figure>
+
+                <figure class="gallery-item item-3">
+                    <img src="img/asa_real_e_yuru.png" alt="Asa Real e Yuru">
+                    <figcaption>Irmaos separados pelo amanhecer</figcaption>
+                </figure>
+
+                <figure class="gallery-item item-4">
+                    <img src="img/gabi.webp" alt="Gabi">
+                    <figcaption>Gabi</figcaption>
+                </figure>
+
+                <figure class="gallery-item item-5">
+                    <div class="media-container">
+                        <video controls>
+                            <source src="videos/edit-yomi-no-tsugai.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <figcaption>Edit</figcaption>
+                </figure>
+
+                <figure class="gallery-item item-6">
+                    <img src="img/lords_direcionais_olhos_brilhando.jpg" alt="Lords Direcionais">
+                    <figcaption>Lords direcionais</figcaption>
+                </figure>
+            </section>
+
+            <section class="audio-section">
+                <div class="audio-item">
+
+                    <audio controls>
+                        <source src="sounds/Anime de Japan - Going Home (Bleach OST).mp3" type="audio/mpeg">
+                    </audio>
+                    <p>Going Home</p>
+                </div>
+
+                <div class="audio-item">
+                    <audio controls>
+                        <source src="sounds/Sinking Town.mp3" type="audio/mpeg">
+                    </audio>
+                    <p>Sinking Town</p>
+                </div>
+
+                <div class="audio-item">
+                    <audio controls>
+                        <source src="sounds/Waltz for Stark and Fern.mp3" type="audio/mpeg">
+                    </audio>
+                    <p>Waltz for Stark and Fern <3</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

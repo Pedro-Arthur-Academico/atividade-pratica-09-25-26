@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    background: #ffffff;
+    color: #000000;
+     /* pra n deixar anda passar ele faz o corte horizontal */
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 60px;
+    /* linha prta pras erparar o contudo */
+    border-bottom: 4px solid #000000; 
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.gallery {
+    display: grid;
+    /* The grid-template-columns CSS property defines the line names and track sizing functions of the grid columns.  */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns */
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px;
+    grid-auto-rows: 200px;
+    margin-bottom: 80px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    /* borda ao redor de cada item na galeria */
+    border: 3px solid #000000;
+    background: #ffffff;
+    cursor: pointer; /* pra deixar so o pontiero mesmo */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.media-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.media-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item-2 {
+    grid-column: span 2;
+}
+
+.item-3 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item-4 {
+    grid-column: span 2;
+}
+
+.item-5 {
+    grid-column: span 2;
+}
+
+.item-6 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.audio-section {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    border-top: 4px solid #000000;
+}
+
+.audio-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.audio-item audio {
+    width: 280px;
+    height: 40px;
+    background: #f5f5f5;
+}
+
+.audio-item p {
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
